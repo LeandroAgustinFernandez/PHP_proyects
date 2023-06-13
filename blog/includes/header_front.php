@@ -4,6 +4,7 @@
 <?php include 'models/Articulo.php'?>
 <?php include 'models/Comentario.php'?>
 <?php include 'models/Usuario.php'?>
+<?php session_start();?>
 
 <!doctype html>
 <html lang="es">

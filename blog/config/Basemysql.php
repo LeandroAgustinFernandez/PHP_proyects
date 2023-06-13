@@ -4,9 +4,10 @@
 
     //Parámetros base de datos
     private $host = 'localhost';
-    private $db_name = 'blogUdemy';
+    private $db_name = 'blogudemy';
     private $username = 'root';
     private $password = '';
+    // private $port = 3310;
     private $conn;
 
     //Conexión a la BD

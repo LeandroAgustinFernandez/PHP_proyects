@@ -19,6 +19,11 @@ $articulos = $articulosModel->get_all();
 </div>
 <div class="row mt-2 caja">
     <div class="col-sm-12">
+        <?php if (isset($_GET['mensaje'])) { ?>
+            <div class="alert alert-success" role="alert">
+                <?php echo $_GET['mensaje']; ?>
+            </div>
+        <?php } ?>
         <table id="tblArticulos" class="display" style="width:100%">
             <thead>
                 <tr>
@@ -36,7 +41,7 @@ $articulos = $articulosModel->get_all();
                         <td><?php echo $articulo->id; ?></td>
                         <td><?php echo $articulo->titulo; ?></td>
                         <td>
-                            <img class="img-fluid" src="<?php echo RUTA_FRONT?>img/articulos/<?php echo $articulo->imagen; ?>" style="width:180px;">
+                            <img class="img-fluid" src="<?php echo RUTA_FRONT ?>img/articulos/<?php echo $articulo->imagen; ?>" style="width:180px;">
                         </td>
                         <td><?php echo $articulo->texto; ?></td>
                         <td><?php echo $articulo->fecha_creacion; ?></td>
